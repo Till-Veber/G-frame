@@ -1,0 +1,288 @@
+[
+  {
+    "name_eng" : "Acceltra",
+    "types" : [ "Rifle" ],
+    "magazine_capacity" : 48,
+    "ammo_maximum" : 96,
+    "reload_time" : 2,
+    "types_of_shooting" : [
+      {
+        "name_eng" : "Rocket Impact",
+        "damage" : {
+          "impact" : 35,
+          "puncture" : 0,
+          "slash" : 0,
+          "cold" : 0,
+          "electricity" : 0,
+          "heat" : 0,
+          "toxin" : 0,
+          "blast" : 0,
+          "corrosive" : 0,
+          "gas" : 0,
+          "magnetic" : 0,
+          "radiation" : 0,
+          "viral" : 0
+        },
+        "critical_chance" : 32,
+        "critical_damage" : 2.8,
+        "status_chance" : 6,
+        "forced_procs" : [ "impact" ],
+        "fire_rate" : 12,
+        "ammo_cost" : 1,
+        "multishot" : 1
+      },
+      {
+        "name_eng" : "Rocket Explosion",
+        "damage" : {
+          "impact" : 0,
+          "puncture" : 35.2,
+          "slash" : 8.8,
+          "cold" : 0,
+          "electricity" : 0,
+          "heat" : 0,
+          "toxin" : 0,
+          "blast" : 0,
+          "corrosive" : 0,
+          "gas" : 0,
+          "magnetic" : 0,
+          "radiation" : 0,
+          "viral" : 0
+        },
+        "critical_chance" : 32,
+        "critical_damage" : 2.8,
+        "status_chance" : 6,
+        "forced_procs" : [],
+        "fire_rate" : 12,
+        "ammo_cost" : 1,
+        "multishot" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Acceltra Prime",
+    "types" : [ "Rifle" ],
+    "magazine_capacity" : 48,
+    "ammo_maximum" : 96,
+    "reload_time" : 2,
+    "types_of_shooting" : [
+      {
+        "name_eng" : "Rocket Impact",
+        "damage" : {
+          "impact" : 44,
+          "puncture" : 0,
+          "slash" : 0,
+          "cold" : 0,
+          "electricity" : 0,
+          "heat" : 0,
+          "toxin" : 0,
+          "blast" : 0,
+          "corrosive" : 0,
+          "gas" : 0,
+          "magnetic" : 0,
+          "radiation" : 0,
+          "viral" : 0
+        },
+        "critical_chance" : 34,
+        "critical_damage" : 3,
+        "status_chance" : 18,
+        "forced_procs" : [ "impact" ],
+        "fire_rate" : 10,
+        "ammo_cost" : 1,
+        "multishot" : 1
+      },
+      {
+        "name_eng" : "Rocket Explosion",
+        "damage" : {
+          "impact" : 0,
+          "puncture" : 42.4,
+          "slash" : 10.6,
+          "cold" : 0,
+          "electricity" : 0,
+          "heat" : 0,
+          "toxin" : 0,
+          "blast" : 0,
+          "corrosive" : 0,
+          "gas" : 0,
+          "magnetic" : 0,
+          "radiation" : 0,
+          "viral" : 0
+        },
+        "critical_chance" : 34,
+        "critical_damage" : 3,
+        "status_chance" : 18,
+        "forced_procs" : [],
+        "fire_rate" : 10,
+        "ammo_cost" : 1,
+        "multishot" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Aeolak",
+    "types" : [ "Rifle" ],
+    "magazine_capacity" : 40,
+    "ammo_maximum" : 400,
+    "reload_time" : 2,
+    "types_of_shooting" : [
+      {
+        "name_eng" : "Normal Attack",
+        "damage" : {
+          "impact" : 15,
+          "puncture" : 23,
+          "slash" : 17,
+          "cold" : 0,
+          "electricity" : 0,
+          "heat" : 0,
+          "toxin" : 0,
+          "blast" : 0,
+          "corrosive" : 0,
+          "gas" : 0,
+          "magnetic" : 0,
+          "radiation" : 5,
+          "viral" : 0
+        },
+        "critical_chance" : 21,
+        "critical_damage" : 2.3,
+        "status_chance" : 33,
+        "forced_procs" : [],
+        "fire_rate" : 6,
+        "ammo_cost" : 1,
+        "multishot" : 1
+      },
+      {
+        "name_eng" : "Alt-Fire",
+        "damage" : {
+          "impact" : 58.2,
+          "puncture" : 9.7,
+          "slash" : 29.1,
+          "cold" : 0,
+          "electricity" : 0,
+          "heat" : 0,
+          "toxin" : 0,
+          "blast" : 0,
+          "corrosive" : 0,
+          "gas" : 0,
+          "magnetic" : 0,
+          "radiation" : 0,
+          "viral" : 0
+        },
+        "critical_chance" : 21,
+        "critical_damage" : 2.3,
+        "status_chance" : 33,
+        "forced_procs" : [ "impact" ],
+        "fire_rate" : 1.5,
+        "ammo_cost" : 10,
+        "multishot" : 1
+      },
+      {
+        "name_eng" : "Alt-Fire Explosion",
+        "damage" : {
+          "impact" : 0,
+          "puncture" : 0,
+          "slash" : 0,
+          "cold" : 0,
+          "electricity" : 0,
+          "heat" : 0,
+          "toxin" : 0,
+          "blast" : 789,
+          "corrosive" : 0,
+          "gas" : 0,
+          "magnetic" : 0,
+          "radiation" : 0,
+          "viral" : 0
+        },
+        "critical_chance" : 21,
+        "critical_damage" : 2.3,
+        "status_chance" : 33,
+        "forced_procs" : [],
+        "fire_rate" : 1.5,
+        "ammo_cost" : 10,
+        "multishot" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Ambassador",
+    "types" : [ "Rifle" ],
+    "magazine_capacity" : 96,
+    "ammo_maximum" : 960,
+    "reload_time" : 2.6,
+    "types_of_shooting" : [
+      {
+        "name_eng" : "Auto",
+        "damage" : {
+          "impact" : 0,
+          "puncture" : 0,
+          "slash" : 0,
+          "cold" : 0,
+          "electricity" : 29,
+          "heat" : 0,
+          "toxin" : 0,
+          "blast" : 0,
+          "corrosive" : 0,
+          "gas" : 0,
+          "magnetic" : 0,
+          "radiation" : 0,
+          "viral" : 0
+        },
+        "critical_chance" : 14,
+        "critical_damage" : 2.8,
+        "status_chance" : 26,
+        "forced_procs" : [],
+        "fire_rate" : 13.33,
+        "ammo_cost" : 1,
+        "multishot" : 1
+      },
+      {
+        "name_eng" : "Charge",
+        "damage" : {
+          "impact" : 0,
+          "puncture" : 0,
+          "slash" : 0,
+          "cold" : 0,
+          "electricity" : 600,
+          "heat" : 0,
+          "toxin" : 0,
+          "blast" : 0,
+          "corrosive" : 0,
+          "gas" : 0,
+          "magnetic" : 0,
+          "radiation" : 0,
+          "viral" : 0
+        },
+        "critical_chance" : 16,
+        "critical_damage" : 2.8,
+        "status_chance" : 32,
+        "forced_procs" : [],
+        "fire_rate" : 1,
+        "ammo_cost" : 16,
+        "multishot" : 1
+      },
+      {
+        "name_eng" : "Charged AOE",
+        "damage" : {
+          "impact" : 0,
+          "puncture" : 0,
+          "slash" : 0,
+          "cold" : 0,
+          "electricity" : 800,
+          "heat" : 0,
+          "toxin" : 0,
+          "blast" : 0,
+          "corrosive" : 0,
+          "gas" : 0,
+          "magnetic" : 0,
+          "radiation" : 0,
+          "viral" : 0
+        },
+        "critical_chance" : 16,
+        "critical_damage" : 2.8,
+        "status_chance" : 32,
+        "forced_procs" : [],
+        "fire_rate" : 1,
+        "ammo_cost" : 16,
+        "multishot" : 1
+      }
+    ]
+  }
+]

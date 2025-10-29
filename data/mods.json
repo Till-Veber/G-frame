@@ -1,0 +1,1026 @@
+[
+  {
+    "name_eng" : "Accelerated Blast",
+    "weapon_types" : [ "Shotgun" ],
+    "fire_rate" : 60,
+    "puncture" : 60
+  },
+  {
+    "name_eng" : "Amalgam Serration",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Serration", "Spectral Serration" ],
+    "damage" : 155
+  },
+  {
+    "name_eng" : "Amalgam Shotgun Barrage",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Shotgun Barrage" ],
+    "fire_rate" : 85
+  },
+  {
+    "name_eng" : "Ammo Drum",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "ammo_maximum" : 90
+  },
+  {
+    "name_eng" : "Ammo Stock",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Primed Ammo Stock" ],
+    "magazine_capacity" : 60
+  },
+  {
+    "name_eng" : "Argon Scope",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Galvanized Scope" ],
+    "conditional" : [
+      {
+        "bonus" : "critical_chance",
+        "value" : 135,
+        "duration" : 9,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 1,
+        "refresh" : 1,
+        "conditions" : [ "head_shot" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Atomic Fallout",
+    "weapon_types" : [ "Shotgun" ],
+    "radiation" : 60,
+    "magazine_capacity" : 40
+  },
+  {
+    "name_eng" : "Bane of Corpus",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Primed Bane of Corpus" ],
+    "damage_to_corpus" : 1.3
+  },
+  {
+    "name_eng" : "Bane of Grineer",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Primed Bane of Grineer" ],
+    "damage_to_grineer" : 1.3
+  },
+  {
+    "name_eng" : "Bane of Infested",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Primed Bane of Infested" ],
+    "damage_to_infested" : 1.3
+  },
+  {
+    "name_eng" : "Bane of Orokin",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Primed Bane of Orokin" ],
+    "damage_to_orokin" : 1.3
+  },
+  {
+    "name_eng" : "Bane of The Murmur",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Primed Bane of The Murmur" ],
+    "damage_to_murmur" : 1.3
+  },
+  {
+    "name_eng": "Bladed Rounds",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "conditional" : [
+      {
+        "bonus" : "critical_damage",
+        "value" : 120,
+        "duration" : 9,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 1,
+        "refresh" : 1,
+        "conditions" : [ "kill" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Blaze",
+    "weapon_types" : [ "Shotgun" ],
+    "damage" : 60,
+    "heat" : 60
+  },
+  {
+    "name_eng" : "Blunderbuss",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Critical Deceleration" ],
+    "critical_chance" : 90
+  },
+  {
+    "name_eng" : "Breach Loader",
+    "weapon_types" : [ "Shotgun" ],
+    "puncture" : 120
+  },
+  {
+    "name_eng" : "Burdened Magazine",
+    "weapon_types" : [ "Shotgun" ],
+    "magazine_capacity" : 60,
+    "reload_speed" : -18
+  },
+  {
+    "name_eng" : "Charged Chamber",
+    "weapon_types" : [ "Sniper rifle" ],
+    "conditional" : [
+      {
+        "bonus" : "multiplicative_damage",
+        "value" : 40,
+        "duration" : "inf",
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 1,
+        "refresh" : 0,
+        "conditions" : [ "first_shot" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Charged Shell",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Primed Charged Shell" ],
+    "electricity" : 90
+  },
+  {
+    "name_eng" : "Chilling Grasp",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Primed Chilling Grasp" ],
+    "cold" : 90
+  },
+  {
+    "name_eng" : "Chilling Reload",
+    "weapon_types" : [ "Shotgun" ],
+    "cold" : 60,
+    "reload_speed" : 40
+  },
+  {
+    "name_eng" : "Cleanse Corpus",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Primed Cleanse Corpus" ],
+    "damage_to_corpus" : 1.3
+  },
+  {
+    "name_eng" : "Cleanse Grineer",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Primed Cleanse Grineer" ],
+    "damage_to_grineer" : 1.3
+  },
+  {
+    "name_eng" : "Cleanse Infested",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Primed Cleanse Infested" ],
+    "damage_to_infested" : 1.3
+  },
+  {
+    "name_eng" : "Cleanse Orokin",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Primed Cleanse Orokin" ],
+    "damage_to_orokin" : 1.3
+  },
+  {
+    "name_eng" : "Cleanse The Murmur",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Primed Cleanse The Murmur" ],
+    "damage_to_murmur" : 1.3
+  },
+  {
+    "name_eng" : "Contagious Spread",
+    "weapon_types" : [ "Shotgun" ],
+    "toxin" : 90
+  },
+  {
+    "name_eng" : "Continuous Misery",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "status_duration" : 100
+  },
+  {
+    "name_eng" : "Crash Course",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "impact" : 120
+  },
+  {
+    "name_eng" : "Critical Deceleration",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Blunderbuss" ],
+    "critical_chance" : 200,
+    "fire_rate" : -20
+  },
+  {
+    "name_eng" : "Critical Delay",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Point Strike" ],
+    "critical_chance" : 200,
+    "fire_rate" : -20,
+    "bows_fire_rate" : -40
+  },
+  {
+    "name_eng" : "Cryo Rounds",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Primed Cryo Rounds" ],
+    "cold" : 90
+  },
+  {
+    "name_eng" : "Depleted Reload",
+    "weapon_types" : [ "Sniper rifle" ],
+    "magazine_capacity" : -60,
+    "reload_speed" : 48
+  },
+  {
+    "name_eng" : "Disruptor",
+    "weapon_types" : [ "Shotgun" ],
+    "impact" : 90
+  },
+  {
+    "name_eng" : "Fanged Fusillade",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "slash" : 120
+  },
+  {
+    "name_eng" : "Fast Hands",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Primed Fast Hands" ],
+    "reload_speed" : 30
+  },
+  {
+    "name_eng" : "Flechette",
+    "weapon_types" : [ "Shotgun" ],
+    "puncture" : 90
+  },
+  {
+    "name_eng" : "Frail Momentum",
+    "weapon_types" : [ "Shotgun" ],
+    "fire_rate" : 90,
+    "damage" : -15
+  },
+  {
+    "name_eng" : "Frigid Blast",
+    "weapon_types" : [ "Shotgun" ],
+    "cold" : 60,
+    "status_chance" : 60
+  },
+  {
+    "name_eng" : "Full Contact",
+    "weapon_types" : [ "Shotgun" ],
+    "impact" : 120
+  },
+  {
+    "name_eng" : "Galvanized Aptitude",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Rifle Aptitude" ],
+    "status_chance" : 80,
+    "conditional" : [
+      {
+        "bonus" : "condition_damage",
+        "value" : 40,
+        "duration" : 20,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 2,
+        "refresh" : 1,
+        "conditions" : [ "kill" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Galvanized Chamber",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Split Chamber", "Split Flights" ],
+    "multishot" : 80,
+    "conditional" : [
+      {
+        "bonus" : "multishot",
+        "value" : 30,
+        "duration" : 20,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 5,
+        "refresh" : 1,
+        "conditions" : [ "kill" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Galvanized Hell",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Hell's Chamber" ],
+    "multishot" : 110,
+    "conditional" : [
+      {
+        "bonus" : "multishot",
+        "value" : 30,
+        "duration" : 20,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 4,
+        "refresh" : 1,
+        "conditions" : [ "kill" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Galvanized Savvy",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Shotgun Savvy" ],
+    "status_chance" : 80,
+    "conditional" : [
+      {
+        "bonus" : "condition_damage",
+        "value" : 40,
+        "duration" : 20,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 2,
+        "refresh" : 1,
+        "conditions" : [ "kill" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Galvanized Scope",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Argon Scope" ],
+    "conditional" : [
+      {
+        "bonus" : "critical_chance",
+        "value" : 120,
+        "duration" : 12,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 1,
+        "refresh" : 1,
+        "conditions" : [ "head_shot" ],
+        "chance" : 1
+      },
+      {
+        "bonus" : "critical_chance",
+        "value" : 40,
+        "duration" : 12,
+        "uses" : "inf",
+        "joint_duration" : 0,
+        "stacks" : 5,
+        "refresh" : 1,
+        "conditions" : [ "head_shot_kill" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Hammer Shot",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "critical_damage" : 60,
+    "status_chance" : 80
+  },
+  {
+    "name_eng" : "Heavy Caliber",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "damage" : 165
+  },
+  {
+    "name_eng" : "Hellfire",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "heat" : 60
+  },
+  {
+    "name_eng" : "Hell's Chamber",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Galvanized Hell" ],
+    "multishot" : 120
+  },
+  {
+    "name_eng" : "High Voltage",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "electricity" : 60,
+    "status_chance" : 60
+  },
+  {
+    "name_eng" : "Hunter Munitions",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "conditional" : [
+      {
+        "bonus" : "slash_status_proc",
+        "value" : 1,
+        "duration" : "status_duration",
+        "uses" : "inf",
+        "joint_duration" : 0,
+        "stacks" : "inf",
+        "refresh" : 0,
+        "conditions" : [ "critical_hit" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Hunter Track",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "status_duration" : 90
+  },
+  {
+    "name_eng" : "Incendiary Coat",
+    "weapon_types" : [ "Shotgun" ],
+    "heat" : 90
+  },
+  {
+    "name_eng" : "Infected Clip",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "toxin" : 90
+  },
+  {
+    "name_eng" : "Internal Bleeding",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "conditional" : [
+      {
+        "bonus" : "slash_status_proc",
+        "value" : 2,
+        "duration" : "status_duration",
+        "uses" : "inf",
+        "joint_duration" : 0,
+        "stacks" : "inf",
+        "refresh" : 0,
+        "conditions" : [ "impact_status_proc", "fire_rate_below_2.5"],
+        "chance" : 0.35
+      },
+      {
+        "bonus" : "slash_status_proc",
+        "value" : 1,
+        "duration" : "status_duration",
+        "uses" : "inf",
+        "joint_duration" : 0,
+        "stacks" : "inf",
+        "refresh" : 0,
+        "conditions" : [ "impact_status_proc", "fire_rate_not_below_2.5"],
+        "chance" : 0.35
+      }
+    ]
+  },
+  {
+    "name_eng" : "Laser Sight",
+    "weapon_types" : [ "Shotgun" ],
+    "conditional" : [
+      {
+        "bonus" : "critical_chance",
+        "value" : 120,
+        "duration" : 9,
+        "uses" : "inf",
+        "joint_duration" : 0,
+        "stacks" : 1,
+        "refresh" : 1,
+        "conditions" : [ "head_shot" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Lingering Torment",
+    "weapon_types" : [ "Shotgun" ],
+    "status_duration" : 90
+  },
+  {
+    "name_eng" : "Magazine Warp",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Primed Magazine Warp" ],
+    "magazine_capacity" : 30
+  },
+  {
+    "name_eng" : "Magnetic Capacity",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "magnetic" : 60,
+    "magazine_capacity" : 40
+  },
+  {
+    "name_eng" : "Magnetic Strafe",
+    "weapon_types" : [ "Shotgun" ],
+    "magnetic" : 60,
+    "fire_rate" : 40
+  },
+  {
+    "name_eng" : "Magnetic Welt",
+    "weapon_types" : [ "Shotgun" ],
+    "conditional" : [
+      {
+        "bonus" : "magnetic_status_proc",
+        "value" : 2,
+        "duration" : "status_duration",
+        "uses" : "inf",
+        "joint_duration" : 0,
+        "stacks" : 10,
+        "refresh" : 0,
+        "conditions" : [ "impact_status_proc", "fire_rate_below_2.5" ],
+        "chance" : 0.35
+      },
+      {
+        "bonus" : "magnetic_status_proc",
+        "value" : 1,
+        "duration" : "status_duration",
+        "uses" : "inf",
+        "joint_duration" : 0,
+        "stacks" : 10,
+        "refresh" : 0,
+        "conditions" : [ "impact_status_proc", "fire_rate_not_below_2.5" ],
+        "chance" : 0.35
+      }
+    ]
+  },
+  {
+    "name_eng" : "Malignant Force",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "toxin" : 60,
+    "status_chance" : 60
+  },
+  {
+    "name_eng" : "Motus Setup",
+    "weapon_types" : [ "Shotgun" ],
+    "critical_chance" : 100,
+    "status_chance" : 100
+  },
+  {
+    "name_eng" : "Nano-Applicator",
+    "weapon_types" : [ "Shotgun" ],
+    "status_chance" : 90
+  },
+  {
+    "name_eng" : "Piercing Caliber",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "puncture" : 120
+  },
+  {
+    "name_eng" : "Piercing Hit",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "puncture" : 90
+  },
+  {
+    "name_eng" : "Point Blank",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Primed Point Blank" ],
+    "damage" : 90
+  },
+  {
+    "name_eng" : "Point Strike",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Critical Delay" ],
+    "critical_chance" : 150
+  },
+  {
+    "name_eng" : "Primary Acuity",
+    "weapon_types" : [ "Rfile", "Bow", "Sniper rifle" ],
+    "weak_point_damage" : 350,
+    "weak_point_critical_chance" : 350,
+    "locks" : [ "multishot" ]
+  },
+  {
+    "name_eng" : "Primed Ammo Stock",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Ammo Stock" ],
+    "magazine_capacity" : 110
+  },
+  {
+    "name_eng" : "Primed Bane of Corpus",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Bane of Corpus" ],
+    "damage_to_corpus" : 1.55
+  },
+  {
+    "name_eng" : "Primed Bane of Grineer",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Bane of Grineer" ],
+    "damage_to_grineer" : 1.55
+  },
+  {
+    "name_eng" : "Primed Bane of Infested",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Bane of Infested" ],
+    "damage_to_infested" : 1.55
+  },
+  {
+    "name_eng" : "Primed Bane of Orokin",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Bane of Orokin" ],
+    "damage_to_orokin" : 1.55
+  },
+  {
+    "name_eng" : "Primed Bane of The Murmur",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Bane of The Murmur" ],
+    "damage_to_murmur" : 1.55
+  },
+  {
+    "name_eng" : "Primed Chamber",
+    "weapon_types" : [ "Sniper rifle" ],
+    "conditional" : [
+      {
+        "bonus" : "multiplicative_damage",
+        "value" : 100,
+        "duration" : "inf",
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 1,
+        "refresh" : 0,
+        "conditions" : [ "first_shot" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Primed Charged Shell",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Charged Shell" ],
+    "electricity" : 165
+  },
+  {
+    "name_eng" : "Primed Chilling Grasp",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Chilling Grasp" ],
+    "cold" : 165
+  },
+  {
+    "name_eng" : "Primed Cleanse Corpus",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Cleanse Corpus" ],
+    "damage_to_corpus" : 1.55
+  },
+  {
+    "name_eng" : "Primed Cleanse Grineer",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Cleanse Grineer" ],
+    "damage_to_grineer" : 1.55
+  },
+  {
+    "name_eng" : "Primed Cleanse Infested",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Cleanse Infested" ],
+    "damage_to_infested" : 1.55
+  },
+  {
+    "name_eng" : "Primed Cleanse Orokin",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Cleanse Orokin" ],
+    "damage_to_orokin" : 1.55
+  },
+  {
+    "name_eng" : "Primed Cleanse The Murmur",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Cleanse The Murmur" ],
+    "damage_to_murmur" : 1.55
+  },
+  {
+    "name_eng" : "Primed Cryo Rounds",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Cryo Rounds" ],
+    "cold" : 165
+  },
+  {
+    "name_eng" : "Primed Fast Hands",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Fast Hands" ],
+    "reload_speed" : 55
+  },
+  {
+    "name_eng" : "Primed Magazine Warp",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Magazine Warp" ],
+    "magazine_capacity" : 55
+  },
+  {
+    "name_eng" : "Primed Ravage",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Ravage" ],
+    "critical_damage" : 110
+  },
+  {
+    "name_eng" : "Primed Point Blank",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Point Blank" ],
+    "damage" : 165
+  },
+  {
+    "name_eng" : "Primed Shred",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Shred" ],
+    "fire_rate" : 55,
+    "bows_fire_rate" : 110
+  },
+  {
+    "name_eng" : "Primed Tactical Pump",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Tactical Pump" ],
+    "reload_speed" : 100
+  },
+  {
+    "name_eng" : "Proton Jet",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "status_chance" : 120,
+    "critical_chance" : 120
+  },
+  {
+    "name_eng" : "Radiated Reload",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "radiation" : 60,
+    "reload_speed" : 40
+  },
+  {
+    "name_eng" : "Ravage",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Primary Ravage" ],
+    "critical_damage" : 60
+  },
+  {
+    "name_eng" : "Reaper Clip",
+    "weapon_types" : [ "Shotgun" ],
+    "conditional" : [
+      {
+        "bonus" : "fire_rate",
+        "value" : 105,
+        "duration" : 9,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 1,
+        "refresh" : 1,
+        "conditions" : [ "reload" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Rifle Aptitude",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Galvanized Aptitude" ],
+    "status_chance" : 90
+  },
+  {
+    "name_eng" : "Rifle Elementalist",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "status_damage" : 90
+  },
+  {
+    "name_eng" : "Rime Rounds",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "cold" : 60,
+    "status_chance" : 60
+  },
+  {
+    "name_eng" : "Rupture",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "impact" : 90
+  },
+  {
+    "name_eng" : "Sawtooth Clip",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "slash" : 90
+  },
+  {
+    "name_eng" : "Scattering Inferno",
+    "weapon_types" : [ "Shotgun" ],
+    "heat" : 60,
+    "status_chance" : 60
+  },
+  {
+    "name_eng" : "Seeking Fury",
+    "weapon_types" : [ "Shotgun" ],
+    "reload_speed" : 15
+  },
+  {
+    "name_eng" : "Semi-Riffle Cannonade",
+    "weapon_types" : [ "Semi-Auto Rifle" ],
+    "damage" : 240,
+    "locks" : [ "fire_rate" ]
+  },
+  {
+    "name_eng" : "Semi-Shotgun Cannonade",
+    "weapon_types" : [ "Semi-Auto Shotgun" ],
+    "damage" : 240,
+    "locks" : [ "fire_rate" ]
+  },
+  {
+    "name_eng" : "Serration",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Amalgam Serration", "Spectral Serration" ],
+    "damage" : 165
+  },
+  {
+    "name_eng" : "Shell Compression",
+    "weapon_types" : [ "Shotgun" ],
+    "ammo_maximum" : 90
+  },
+  {
+    "name_eng" : "Shell Shock",
+    "weapon_types" : [ "Shotgun" ],
+    "electricity" : 60,
+    "status_chance" : 60
+  },
+  {
+    "name_eng" : "Shotgun Barrage",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Amalgam Shotgun Barrage" ],
+    "fire_rate" : 90
+  },
+  {
+    "name_eng" : "Shotgun Elementalist",
+    "weapon_types" : [ "Shotgun" ],
+    "status_damage" : 90,
+    "magazine_capacity" : 60
+  },
+  {
+    "name_eng" : "Shotgun Savvy",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Galvanized Savvy" ],
+    "status_chance" : 90
+  },
+  {
+    "name_eng" : "Shrapnel Shot",
+    "weapon_types" : [ "Shotgun" ],
+    "conditional" : [
+      {
+        "bonus" : "critical_damage",
+        "value" : 99,
+        "duration" : 9,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 1,
+        "refresh" : 1,
+        "conditions" : [ "kill" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Shred",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Primed Shred" ],
+    "fire_rate" : 30,
+    "bows_fire_rate" : 60
+  },
+  {
+    "name_eng" : "Shredder",
+    "weapon_types" : [ "Shotgun" ],
+    "slash" : 90
+  },
+  {
+    "name_eng" : "Spectral Serration",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Serration", "Amalgam Serration" ],
+    "damage" : 330
+  },
+  {
+    "name_eng" : "Speed Trigger",
+    "weapon_types" : [ "Rifle", "Bows", "Sniper rifle" ],
+    "fire_rate" : 60,
+    "bows_fire_rate" : 120
+  },
+  {
+    "name_eng" : "Split Chamber",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "equivalents" : [ "Split Flights", "Galvanized Chamber" ],
+    "multishot" : 90
+  },
+  {
+    "name_eng" : "Split Flights",
+    "weapon_types" : [ "Non AOE bow" ],
+    "equivalents" : [ "Split Chamber", "Galvanized Chamber" ],
+    "conditional" : [
+      {
+        "bonus" : "multishot",
+        "value" : 100,
+        "duration" : 2,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 4,
+        "refresh" : 1,
+        "conditions" : [ "hit" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Spring-Loaded Chamber",
+    "weapon_types" : [ "Rifle" ],
+    "conditional" : [
+      {
+        "bonus" : "fire_rate",
+        "value" : 75,
+        "duration" : 9,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 1,
+        "refresh" : 1,
+        "conditions" : [ "reload" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Stormbringer",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "electricity" : 90
+  },
+  {
+    "name_eng" : "Sweeping Serration",
+    "weapon_types" : [ "Shotgun" ],
+    "slash" : 120
+  },
+  {
+    "name_eng" : "Tactical Pump",
+    "weapon_types" : [ "Shotgun" ],
+    "equivalents" : [ "Primed Tactical Pump" ],
+    "reload_speed" : 60
+  },
+  {
+    "name_eng" : "Tainted Mag",
+    "weapon_types" : [ "Rifle" ],
+    "magazine_capacity" : 66,
+    "reload_speed" : -33
+  },
+  {
+    "name_eng" : "Target Acquired",
+    "weapon_types" : [ "Sniper rifle" ],
+    "headshot_multiplier" : 60
+  },
+  {
+    "name_eng" : "Thermite Rounds",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "heat" : 60,
+    "status_chance" : 60
+  },
+  {
+    "name_eng" : "Toxic Barrage",
+    "weapon_types" : [ "Shotgun" ],
+    "toxin" : 60,
+    "status_chance" : 60
+  },
+  {
+    "name_eng" : "Vicious Spread",
+    "weapon_types" : [ "Shotgun" ],
+    "damage" : 90
+  },
+  {
+    "name_eng" : "Vigilante Armaments",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "multishot" : 60,
+    "set" : {
+      "name" : "Vigilante",
+      "bonus" : "extra_critical_chance",
+      "value" : 5,
+      "step" : 5,
+      "mods" : 6
+    }
+  },
+  {
+    "name_eng" : "Vigilante Fervor",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "fire_rate" : 45,
+    "bows_fire_rate" : 90,
+    "set" : {
+      "name" : "Vigilante",
+      "bonus" : "extra_critical_chance",
+      "value" : 5,
+      "step" : 5,
+      "mods" : 6
+    }
+  },
+  {
+    "name_eng" : "Vigilante Offence",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "set" : {
+      "name" : "Vigilante",
+      "bonus" : "extra_critical_chance",
+      "value" : 5,
+      "step" : 5,
+      "mods" : 6
+    }
+  },
+  {
+    "name_eng" : "Vigilante Supplies",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "set" : {
+      "name" : "Vigilante",
+      "bonus" : "extra_critical_chance",
+      "value" : 5,
+      "step" : 5,
+      "mods" : 6
+    }
+  },
+  {
+    "name_eng" : "Vile Acceleration",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "fire_rate" : 90,
+    "bows_fire_rate" : 180,
+    "damage" : -15
+  },
+  {
+    "name_eng" : "Vital Sense",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "critical_damage" : 120
+  },
+  {
+    "name_eng" : "Wildfire",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle" ],
+    "magazine_capacity" : 20,
+    "heat" : 60
+  }
+]
