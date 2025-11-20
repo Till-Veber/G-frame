@@ -2,6 +2,6 @@
   "Name" : ["Warframebuilder", "Overframe", "G-frame (my product)"],
   "Equipment types" : ["All", "All", "Only weapons"],
   "Current data" : ["Outdated", "Yes", "Yes"],
-  "Public posting of builds" : ["No", "Yes", "No"],
+  "Public posting of builds" : ["No", "Yes", "Yes"],
   "Efficiency calculation" : ["No", "No", "Yes"]
 }
