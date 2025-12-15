@@ -1,0 +1,123 @@
+<!-- src/templates/main/index.html -->
+{% extends "base.html" %}
+
+{% block title %}G-Frame — Конфигуратор билдов Warframe{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="search-box text-center">
+    <h1 class="text-light mb-4">🔍 Найдите или создайте билд</h1>
+    <input
+      type="text"
+      id="weaponSearch"
+      class="form-control form-control-lg bg-dark text-light border-orange"
+      placeholder="Введите название оружия"
+      autocomplete="off"
+    >
+    <ul id="suggestions" class="list-group mt-2" style="max-width: 600px; margin: 0 auto; display: none;"></ul>
+  </div>
+
+  <div class="text-center mt-4">
+    <button id="createBuildBtn" class="btn btn-orange btn-lg rounded-circle p-3">
+      <i class="fas fa-plus"></i>
+    </button>
+    <p class="text-light mt-2">Создать билд</p>
+  </div>
+</div>
+
+<!-- Подключаем Font Awesome для иконок -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  .border-orange {
+    border-color: #ff6600 !important;
+    background-color: #222 !important;
+    color: #fff;
+  }
+  .btn-orange {
+    background-color: #ff6600;
+    border: none;
+  }
+  .btn-orange:hover {
+    background-color: #e05500;
+  }
+  .suggestion-item {
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+  }
+  .suggestion-item:hover, .suggestion-item.active {
+    background-color: #ff6600;
+  }
+</style>
+
+<script>
+  const searchInput = document.getElementById('weaponSearch');
+  const suggestionsBox = document.getElementById('suggestions');
+
+  let currentIndex = -1;
+  let suggestions = [];
+
+  searchInput.addEventListener('input', async () => {
+    const query = searchInput.value.trim();
+    if (query.length < 1) {
+      suggestionsBox.style.display = 'none';
+      return;
+    }
+
+    const res = await fetch(`/api/search-weapons?q=${encodeURIComponent(query)}`);
+    suggestions = await res.json();
+    renderSuggestions();
+  });
+
+  function renderSuggestions() {
+    if (suggestions.length === 0) {
+      suggestionsBox.style.display = 'none';
+      return;
+    }
+
+    suggestionsBox.innerHTML = suggestions.map((w, i) =>
+      `<li class="list-group-item suggestion-item" data-index="${i}">
+        ${w.name_ru} <small class="text-muted">(${w.name_eng})</small>
+      </li>`
+    ).join('');
+
+    suggestionsBox.style.display = 'block';
+    currentIndex = -1;
+  }
+
+  suggestionsBox.addEventListener('click', (e) => {
+    if (e.target.classList.contains('suggestion-item')) {
+      const idx = e.target.getAttribute('data-index');
+      selectSuggestion(parseInt(idx));
+    }
+  });
+
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      currentIndex = Math.min(currentIndex + 1, suggestions.length - 1);
+      updateActive();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      currentIndex = Math.max(currentIndex - 1, -1);
+      updateActive();
+    } else if (e.key === 'Enter' && currentIndex >= 0) {
+      e.preventDefault();
+      selectSuggestion(currentIndex);
+    }
+  });
+
+  function updateActive() {
+    document.querySelectorAll('.suggestion-item').forEach((el, i) => {
+      el.classList.toggle('active', i === currentIndex);
+    });
+  }
+
+  function selectSuggestion(index) {
+    const w = suggestions[index];
+    // Перенаправляем на страницу создания билда
+    window.location.href = `/builds/create?weapon_id=${w.id}`;
+}
+</script>
+{% endblock %}

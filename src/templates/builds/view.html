@@ -1,0 +1,279 @@
+<!-- src/templates/builds/view.html -->
+{% extends "base.html" %}
+
+{% block title %}{{ build.title }} — {{ build.weapon.name_ru }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <div class="d-flex align-items-center mb-4">
+    <img src="/static/img/weapons/{{ build.weapon.name_eng }}.png"
+         class="img-fluid" style="max-height: 100px; image-rendering: pixelated;">
+    <div class="ms-3">
+      <h2 class="text-light">{{ build.title }}</h2>
+      <p class="text-muted">{{ build.weapon.name_ru }} ({{ build.weapon.name_eng }})</p>
+      <p class="text-light">Автор: {{ build.author.username }}</p>
+
+      {% if build.author_id == current_user.id %}
+        <form method="post" action="{{ url_for('builds.delete_build', build_id=build.id) }}"
+              onsubmit="return confirm('Удалить билд?')" class="d-inline">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <button type="submit" class="btn btn-danger btn-sm">Удалить билд</button>
+        </form>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if build.description %}
+  <div class="card bg-dark text-light mb-4">
+    <div class="card-body">
+      {{ build.description }}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Моды -->
+  <div class="row mb-4">
+    <h4 class="text-light mb-3">Моды</h4>
+    <div class="d-flex flex-wrap gap-3">
+      {% for i in range(1, 9) %}
+        {% set mod = build.mods_by_slot.get('slot' + i|string) %}
+        <div class="slot bg-dark border border-orange rounded p-2 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+          {% if mod %}
+            <img src="/static/img/mods/{{ mod.name_eng }}.png" width="40" height="40" style="image-rendering: pixelated;" title="{{ mod.name_ru }}">
+          {% else %}
+            {{ i }}
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Exilus -->
+  <div class="row mb-4">
+    <h4 class="text-light mb-3">Exilus</h4>
+    <div class="slot bg-dark border border-warning rounded p-2 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+      {% if build.mods_by_slot.exilus %}
+        <img src="/static/img/mods/{{ build.mods_by_slot.exilus.name_eng }}.png" width="40" height="40" style="image-rendering: pixelated;" title="{{ build.mods_by_slot.exilus.name_ru }}">
+      {% else %}
+        Ex
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Arcane -->
+  {% if build.arcane %}
+  <div class="row mb-4">
+    <h4 class="text-light mb-3">Мистификатор</h4>
+    <div class="slot bg-dark border border-success rounded p-2 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+      <img src="/static/img/arcanes/{{ build.arcane.name_eng }}.png" width="40" height="40" style="image-rendering: pixelated;" title="{{ build.arcane.name_ru }}">
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Характеристики оружия -->
+  {% if weapon_stats %}
+  <div class="card bg-dark text-light mb-4">
+    <div class="card-header"><h4 class="mb-0">Характеристики оружия</h4></div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Урон</h5>
+          <ul class="list-unstyled">
+            {% for dmg_type, value in weapon_stats.damage.items() %}
+              {% if value > 0 %}
+                <li>{{ dmg_type|capitalize }}: {{ "%.2f"|format(value) }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+
+          <h5 class="mt-3">Крит</h5>
+          <p>Шанс: {{ "%.2f"|format(weapon_stats.critical_chance * 100) }}%<br>
+             Множитель: ×{{ "%.2f"|format(weapon_stats.critical_damage) }}</p>
+
+          <h5 class="mt-3">Статус</h5>
+          <p>Шанс: {{ "%.2f"|format(weapon_stats.status_chance * 100) }}%</p>
+        </div>
+
+        <div class="col-md-6">
+          <h5>Стрельба</h5>
+          <p>Скорострельность: {{ "%.2f"|format(weapon_stats.fire_rate) }} выстр./сек<br>
+             Мультшот: ×{{ "%.2f"|format(weapon_stats.multishot) }}</p>
+
+          {% if weapon_stats.magazine_capacity %}
+          <h5 class="mt-3">Боезапас</h5>
+          <p>В магазине: {{ "%.0f"|format(weapon_stats.magazine_capacity) }}<br>
+             {% if weapon_stats.ammo_maximum %}Макс. патроны: {{ "%.0f"|format(weapon_stats.ammo_maximum) }}{% endif %}</p>
+          {% endif %}
+
+          {% if weapon_stats.reload_speed and build.weapon.shooting_types[0].reload_time %}
+          <h5 class="mt-3">Перезарядка</h5>
+          <p>{{ "%.2f сек"|format(build.weapon.shooting_types[0].reload_time / weapon_stats.reload_speed) }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- Форма расчёта урона -->
+  <h4 class="text-light mt-4">Расчёт урона</h4>
+  <form id="experimentForm">
+    <input type="hidden" name="build_id" value="{{ build.id }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+    <div class="mb-3">
+      <label for="targetSearch" class="form-label text-light">Выберите цель:</label>
+      <input type="text" id="targetSearch" class="form-control bg-dark text-light border-orange"
+             placeholder="Начните вводить название цели..." autocomplete="off" required>
+      <input type="hidden" id="targetId" name="target_id">
+      <ul id="targetSuggestions" class="list-group mt-1" style="display:none; position:absolute; z-index:1000; width:100%;"></ul>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="targetLevel" class="form-label text-light">Уровень цели</label>
+        <input type="number" class="form-control bg-dark text-light border-orange" id="targetLevel" name="level" value="1" min="1" max="9999">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label text-light">Тип цели</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="eximusCheck" name="is_eximus" value="1">
+          <label class="form-check-label text-light" for="eximusCheck">Эксимус</label>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-orange">Рассчитать урон</button>
+  </form>
+
+  <!-- Превью цели -->
+  <div id="targetPreview" class="mt-3" style="display:none;">
+    <img id="targetImage" src="" alt="Цель" class="img-fluid" style="max-height: 150px;">
+    <p id="targetName" class="text-light mt-2"></p>
+  </div>
+
+  <!-- Результат -->
+  <div id="experimentResult" class="mt-4"></div>
+</div>
+
+<script>
+  // === Поиск целей ===
+  const targetSearch = document.getElementById('targetSearch');
+  const targetSuggestions = document.getElementById('targetSuggestions');
+
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
+  targetSearch.addEventListener('input', debounce(async () => {
+    const query = targetSearch.value.trim();
+    if (query.length < 1) {
+      targetSuggestions.style.display = 'none';
+      return;
+    }
+
+    try {
+      const res = await fetch(`/api/search-targets?q=${encodeURIComponent(query)}`);
+      const targets = await res.json();
+
+      if (targets.length === 0) {
+        targetSuggestions.style.display = 'none';
+        return;
+      }
+
+      targetSuggestions.innerHTML = targets.map(t => `
+        <li class="list-group-item bg-dark text-light"
+            style="cursor:pointer; border-color: #ff6600;"
+            onmouseover="this.style.backgroundColor='#333'"
+            onmouseout="this.style.backgroundColor=''"
+            onclick="selectTarget(${t.id}, '${t.name_ru.replace(/'/g, "\\'")}', '${t.name_eng}')">
+          ${t.name_ru} <small class="text-muted">(${t.fraction})</small>
+        </li>
+      `).join('');
+      targetSuggestions.style.display = 'block';
+    } catch (err) {
+      console.error('Ошибка поиска:', err);
+    }
+  }, 300));
+
+  function selectTarget(targetId, targetName, targetImage) {
+    targetSearch.value = targetName;
+    document.getElementById('targetId').value = targetId;
+    targetSuggestions.style.display = 'none';
+
+    document.getElementById('targetImage').src = `/static/img/targets/${targetImage}.png`;
+    document.getElementById('targetName').textContent = targetName;
+    document.getElementById('targetPreview').style.display = 'block';
+  }
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('#targetSearch') && !e.target.closest('#targetSuggestions')) {
+      targetSuggestions.style.display = 'none';
+    }
+  });
+
+  // === Отправка расчёта ===
+  document.getElementById('experimentForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    formData.set('build_id', '{{ build.id }}');
+
+    try {
+      const res = await fetch('/exp/run', {
+        method: 'POST',
+        body: formData,
+        headers: { 'X-CSRFToken': document.querySelector('[name=csrf_token]').value }
+      });
+
+      const data = await res.json();
+      const resultDiv = document.getElementById('experimentResult');
+
+      if (data.success && data.results) {
+        const r = data.results;
+        const damageJson = JSON.stringify(r.damage_breakdown, null, 2)
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;');
+
+        resultDiv.innerHTML = `
+          <div class="alert alert-success">
+            <h5>📊 Результаты расчёта:</h5>
+            <p><strong>Средний DPS:</strong> ${r.avg_dps}</p>
+            <p><strong>Время убийства:</strong> ${r.kill_time} сек</p>
+            <p><strong>Щиты:</strong> <code>${r.shield_dps} DPS</code> → уничтожаются за ${r.shield_time} сек</p>
+            <p><strong>Здоровье:</strong> <code>${r.health_dps} DPS</code> → уничтожается за ${r.health_time} сек</p>
+
+            <div class="mt-3">
+              <img src="${r.chart_url}" alt="График урона" class="img-fluid rounded border border-orange">
+            </div>
+
+            <details class="mt-3">
+              <summary>Подробный разбор урона</summary>
+              <pre class="bg-dark text-light p-2 rounded">${damageJson}</pre>
+            </details>
+          </div>
+        `;
+      } else {
+        resultDiv.innerHTML = `<div class="alert alert-danger">Ошибка сервера: ${data.error || 'Неизвестная ошибка'}</div>`;
+      }
+    } catch (err) {
+      console.error('Ошибка запроса:', err);
+      document.getElementById('experimentResult').innerHTML =
+        `<div class="alert alert-danger">Не удалось отправить запрос. Проверьте консоль (F12).</div>`;
+    }
+  });
+</script>
+
+<style>
+  .slot {
+    cursor: default;
+  }
+</style>
+{% endblock %}

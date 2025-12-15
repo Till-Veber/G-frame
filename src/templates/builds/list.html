@@ -1,0 +1,89 @@
+<!-- src/templates/builds/list.html -->
+{% extends "base.html" %}
+
+{% block title %}Все билды{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <!-- 🔍 ФОРМА ПОИСКА -->
+  <form method="get" class="mb-4">
+    <div class="input-group">
+      <input
+        type="text"
+        name="q"
+        class="form-control bg-dark text-light border-orange"
+        placeholder="Поиск по названию билда..."
+        value="{{ request.args.get('q', '') }}"
+      >
+      <button class="btn btn-orange" type="submit">Найти</button>
+    </div>
+  </form>
+
+  <h2 class="text-light mb-4">
+    {% if request.args.get('q') %}
+      Результаты поиска: "{{ request.args.get('q') }}"
+    {% else %}
+      Все билды
+    {% endif %}
+  </h2>
+
+  {% if builds.items %}
+    <div class="row">
+      {% for build in builds.items %}
+        <div class="col-md-4 mb-3">
+          <div class="card bg-dark text-light h-100">
+            <img src="/static/img/weapons/{{ build.weapon.name_eng }}.png"
+                 class="card-img-top" alt="{{ build.weapon.name_ru }}" style="max-height: 150px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">{{ build.title }}</h5>
+              <p class="card-text text-muted">{{ build.weapon.name_ru }}</p>
+              <p class="card-text"><small class="text-muted">Автор: {{ build.author.username }}</small></p>
+              <a href="{{ url_for('builds.view_build', build_id=build.id) }}" class="btn btn-outline-orange btn-sm">Просмотреть</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if builds.pages > 1 %}
+      <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+          {% if builds.has_prev %}
+            <li class="page-item">
+              <a class="page-link" href="{{ url_for('builds.list_builds', q=request.args.get('q'), page=builds.prev_num) }}">«</a>
+            </li>
+          {% endif %}
+
+          {% for page in builds.iter_pages() %}
+            {% if page %}
+              {% if page != builds.page %}
+                <li class="page-item">
+                  <a class="page-link" href="{{ url_for('builds.list_builds', q=request.args.get('q'), page=page) }}">{{ page }}</a>
+                </li>
+              {% else %}
+                <li class="page-item active">
+                  <span class="page-link">{{ page }}</span>
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+
+          {% if builds.has_next %}
+            <li class="page-item">
+              <a class="page-link" href="{{ url_for('builds.list_builds', q=request.args.get('q'), page=builds.next_num) }}">»</a>
+            </li>
+          {% endif %}
+        </ul>
+      </nav>
+    {% endif %}
+  {% else %}
+    <div class="alert alert-info">
+      {% if request.args.get('q') %}
+        Ничего не найдено по запросу "{{ request.args.get('q') }}".
+      {% else %}
+        Пока нет ни одного билда.
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

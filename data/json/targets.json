@@ -1,0 +1,3781 @@
+[
+  {
+    "name_eng" : "Amalgam Alkonost",
+    "name_ru" : "Алконост Амальгама",
+    "fraction" : "corpus",
+    "health" : 650,
+    "armor" : 0,
+    "shields" : 300,
+    "head_shot_multiplier" : 1,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Amalgam Heqet",
+    "name_ru" : "Хекат Амальгама",
+    "fraction" : "corpus",
+    "health" : 500,
+    "armor" : 0,
+    "shields" : 400,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Amalgam Kucumatz",
+    "name_ru" : "Кукумац Амальгама",
+    "fraction" : "corpus",
+    "health" : 500,
+    "armor" : 0,
+    "shields" : 100,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Amalgam Machinist",
+    "name_ru" : "Машинист Амальгама",
+    "fraction" : "corpus",
+    "health" : 600,
+    "armor" : 0,
+    "shields" : 300,
+    "head_shot_multiplier" : 1,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Amalgam MOA",
+    "name_ru" : "МОА Амальгама",
+    "fraction" : "corpus",
+    "health" : 500,
+    "armor" : 0,
+    "shields" : 300,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Amalgam Osprey",
+    "name_ru" : "Дрон Амальгама",
+    "fraction" : "corpus",
+    "health" : 500,
+    "armor" : 0,
+    "shields" : 300,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Amalgam Satyr",
+    "name_ru" : "Сатир Амальгама",
+    "fraction" : "corpus",
+    "health" : 600,
+    "armor" : 0,
+    "shields" : 150,
+    "head_shot_multiplier" : "none",
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Ancient Disruptor",
+    "name_ru" : "Древний Разрушитель",
+    "fraction" : "infested",
+    "health" : 400,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Ancient Healer",
+    "name_ru" : "Древний Целитель",
+    "fraction" : "infested",
+    "health" : 400,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Ancient Protector",
+    "name_ru" : "Древний Защитник",
+    "fraction" : "infested",
+    "health" : 400,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Anti MOA",
+    "name_ru" : "Анти МОА",
+    "fraction" : "corpus",
+    "health" : 90,
+    "armor" : 0,
+    "shields" : 120,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Attack Drone",
+    "name_ru" : "Дрон",
+    "fraction" : "corpus",
+    "health" : 250,
+    "armor" : 0,
+    "shields" : 75,
+    "head_shot_multiplier" : "none",
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Bailiff",
+    "name_ru" : "Бейлиф",
+    "fraction" : "grineer",
+    "health" : 700,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Ballista",
+    "name_ru" : "Баллиста",
+    "fraction" : "grineer",
+    "health" : 100,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Battalyst",
+    "name_ru" : "Батталист",
+    "fraction" : "sentient",
+    "health" : 1150,
+    "armor" : 150,
+    "shields" : 0,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "cold",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Boiler",
+    "name_ru" : "Фурункулёр",
+    "fraction" : "infested",
+    "health" : 1200,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 12,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Bombard",
+    "name_ru" : "Бомбардировщик",
+    "fraction" : "grineer",
+    "health" : 300,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 4,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Brood Mother",
+    "name_ru" : "Мать Выводка",
+    "fraction" : "infested",
+    "health" : 700,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 12,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Butcher",
+    "name_ru" : "Мясник",
+    "fraction" : "grineer",
+    "health" : 50,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Charger",
+    "name_ru" : "Инфестоид",
+    "fraction" : "infested",
+    "health" : 80,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 1,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Comba",
+    "name_ru" : "Комба",
+    "fraction" : "corpus",
+    "health" : 1100,
+    "armor" : 0,
+    "shields" : 400,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Commander",
+    "name_ru" : "Командир",
+    "fraction" : "grineer",
+    "health" : 500,
+    "armor" : 95,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 3,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Conculyst",
+    "name_ru" : "Конкулист",
+    "fraction" : "sentient",
+    "health" : 1150,
+    "armor" : 150,
+    "shields" : 0,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "cold",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Corpus Tech",
+    "name_ru" : "Техник",
+    "fraction" : "corpus",
+    "health" : 700,
+    "armor" : 0,
+    "shields" : 250,
+    "head_shot_multiplier" : 3,
+    "base_level" : 15,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Corrupted Ancient",
+    "name_ru" : "Порабощённый Древний",
+    "fraction" : "orokin",
+    "health" : 350,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Corrupted Bombard",
+    "name_ru" : "Порабощённый Бомбардировщик",
+    "fraction" : "orokin",
+    "health" : 300,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 4,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Corrupted Butcher",
+    "name_ru" : "Порабощённый Мясник",
+    "fraction" : "orokin",
+    "health" : 100,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Corrupted Crewman",
+    "name_ru" : "Порабощённый Солдат Корпуса",
+    "fraction" : "orokin",
+    "health" : 50,
+    "armor" : 0,
+    "shields" : 120,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Corrupted Drahk Master",
+    "name_ru" : "Порабощённый Повелитель Драков",
+    "fraction" : "orokin",
+    "health" : 500,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Corrupted Drone",
+    "name_ru" : "Порабощённый Дрон",
+    "fraction" : "orokin",
+    "health" : 250,
+    "armor" : 0,
+    "shields" : 75,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : [ "slash", "impact", "electricity", "heat","toxin", "blast" ]
+  },
+  {
+    "name_eng" : "Corrupted Heavy Gunner",
+    "name_ru" : "Порабощённый Пулемётчик",
+    "fraction" : "orokin",
+    "health" : 700,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 8,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Corrupted Lancer",
+    "name_ru" : "Порабощённый Солдат Гринир",
+    "fraction" : "orokin",
+    "health" : 100,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Corrupted Nullifier",
+    "name_ru" : "Порабощённый Нуллификатор",
+    "fraction" : "orokin",
+    "health" : 60,
+    "armor" : 0,
+    "shields" : 150,
+    "head_shot_multiplier" : 2,
+    "base_level" : 15,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Corrupted MOA",
+    "name_ru" : "Порабощённый МОА",
+    "fraction" : "orokin",
+    "health" : 250,
+    "armor" : 0,
+    "shields" : 250,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Corrupted Warden",
+    "name_ru" : "Надзиратель Орокин",
+    "fraction" : "orokin",
+    "health" : 600,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Crawler",
+    "name_ru" : "Ползун",
+    "fraction" : "infested",
+    "health" : 50,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Crewman",
+    "name_ru" : "Солдат Корпуса",
+    "fraction" : "corpus",
+    "health" : 90,
+    "armor" : 0,
+    "shields" : 120,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Deimos Carnis",
+    "name_ru" : "Карнис Деймоса",
+    "fraction" : "infested",
+    "health" : 800,
+    "armor" : 50,
+    "shields" : 0,
+    "head_shot_multiplier" : 1,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "gas",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : [ "viral" ]
+  },
+  {
+    "name_eng" : "Deimos Jugulus",
+    "name_ru" : "Джугулюс Деймоса",
+    "fraction" : "infested",
+    "health" : 1600,
+    "armor" : 300,
+    "shields" : 0,
+    "head_shot_multiplier" : 1,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "gas",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : [ "viral" ]
+  },
+  {
+    "name_eng" : "Deimos Saxum",
+    "name_ru" : "Саксум Деймоса",
+    "fraction" : "infested",
+    "health" : 800,
+    "armor" : 70,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "gas",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : [ "viral" ]
+  },
+  {
+    "name_eng" : "Deimos Therid",
+    "name_ru" : "Терид Деймоса",
+    "fraction" : "infested",
+    "health" : 1200,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "gas",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : [ "viral" ]
+  },
+  {
+    "name_eng" : "Detron Crewman",
+    "name_ru" : "Солдат с Детроном",
+    "fraction" : "corpus",
+    "health" : 90,
+    "armor" : 0,
+    "shields" : 120,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Drahk Master",
+    "name_ru" : "Повелитель Драков",
+    "fraction" : "grineer",
+    "health" : 500,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 12,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Electric Crawler",
+    "name_ru" : "Электро Ползун",
+    "fraction" : "infested",
+    "health" : 50,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Elite Crewman",
+    "name_ru" : "Элитный Солдат Корпуса",
+    "fraction" : "corpus",
+    "health" : 110,
+    "armor" : 0,
+    "shields" : 150,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Elite Lancer",
+    "name_ru" : "Элитный Солдат Гринир",
+    "fraction" : "grineer",
+    "health" : 150,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Elite Shield Lancer",
+    "name_ru" : "Элитный Щитоносец",
+    "fraction" : "grineer",
+    "health" : 600,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 5,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Eviscerator",
+    "name_ru" : "Потрошитель",
+    "fraction" : "grineer",
+    "health" : 150,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Flameblade",
+    "name_ru" : "Солдат с Огненным Клинком",
+    "fraction" : "grineer",
+    "health" : 50,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Fusion MOA",
+    "name_ru" : "Гибридный МОА",
+    "fraction" : "corpus",
+    "health" : 150,
+    "armor" : 0,
+    "shields" : 150,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Guardsman",
+    "name_ru" : "Охранник",
+    "fraction" : "grineer",
+    "health" : 150,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 10,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Heavy Gunner",
+    "name_ru" : "Тяжёлый Пулемётчик",
+    "fraction" : "grineer",
+    "health" : 300,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 8,
+    "damage_types_multipliers" : [
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "impact",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Hellion",
+    "name_ru" : "Изгнанник",
+    "fraction" : "grineer",
+    "health" : 100,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 15,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Hurling Fragment",
+    "name_ru" : "Скручивающийся Фрагмент",
+    "fraction" : "murmur",
+    "health" : 250,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : "none",
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Hyekka Master",
+    "name_ru" : "Дрессировщик Хьёкк",
+    "fraction" : "grineer",
+    "health" : 650,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Juno Dera MOA",
+    "name_ru" : "МОА Джуно: Дера",
+    "fraction" : "corpus",
+    "health" : 60,
+    "armor" : 0,
+    "shields" : 150,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Juno Disc MOA",
+    "name_ru" : "МОА Джуно Диск",
+    "fraction" : "corpus",
+    "health" : 60,
+    "armor" : 0,
+    "shields" : 200,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Juno Geminex MOA",
+    "name_ru" : "МОА Джуно: Жеминекс",
+    "fraction" : "corpus",
+    "health" : 60,
+    "armor" : 0,
+    "shields" : 200,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Juno Glaxion MOA",
+    "name_ru" : "МОА Джуно: Глаксион",
+    "fraction" : "corpus",
+    "health" : 60,
+    "armor" : 0,
+    "shields" : 300,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Juno Jactus Osprey",
+    "name_ru" : "Дрон Джуно: Яктус",
+    "fraction" : "corpus",
+    "health" : 100,
+    "armor" : 0,
+    "shields" : 50,
+    "head_shot_multiplier" : 3,
+    "base_level" : 10,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Ballista",
+    "name_ru" : "Баллиста Кувы",
+    "fraction" : "grineer",
+    "health" : 100,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Bombard",
+    "name_ru" : "Бомбардировщик Кувы",
+    "fraction" : "grineer",
+    "health" : 300,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 4,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Butcher",
+    "name_ru" : "Мясник Кувы",
+    "fraction" : "grineer",
+    "health" : 50,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Drahk Master",
+    "name_ru" : "Повелитель Драков Кувы",
+    "fraction" : "grineer",
+    "health" : 500,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 12,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Elite Lancer",
+    "name_ru" : "Элитный Солдат Кувы",
+    "fraction" : "grineer",
+    "health" : 150,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Eviscerator",
+    "name_ru" : "Потрошитель Кувы",
+    "fraction" : "grineer",
+    "health" : 150,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Flameblade",
+    "name_ru" : "Солдат с Огненным Клинком Кувы",
+    "fraction" : "grineer",
+    "health" : 50,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Heavy Gunner",
+    "name_ru" : "Тяжёлый Пулемётчик Кувы",
+    "fraction" : "grineer",
+    "health" : 300,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 8,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Hellion",
+    "name_ru" : "Изгнанник Кувы",
+    "fraction" : "grineer",
+    "health" : 100,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Hyekka Master",
+    "name_ru" : "Дрессировщик Хьёкк Кувы",
+    "fraction" : "grineer",
+    "health" : 650,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Lancer",
+    "name_ru" : "Солдат Кувы",
+    "fraction" : "grineer",
+    "health" : 100,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Napalm",
+    "name_ru" : "Огнемётчик Кувы",
+    "fraction" : "grineer",
+    "health" : 600,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Powerclaw",
+    "name_ru" : "Солдат с Силовыми Когтями Кувы",
+    "fraction" : "grineer",
+    "health" : 100,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Roller",
+    "name_ru" : "Роллер Кувы",
+    "fraction" : "grineer",
+    "health" : 40,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : "none",
+    "base_level" : 10,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Scorch",
+    "name_ru" : "Выжигатель Кувы",
+    "fraction" : "grineer",
+    "health" : 120,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Scorpion",
+    "name_ru" : "Скорпион Кувы",
+    "fraction" : "grineer",
+    "health" : 150,
+    "armor" : 150,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Seeker",
+    "name_ru" : "Искатель Кувы",
+    "fraction" : "grineer",
+    "health" : 100,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Shield Lancer",
+    "name_ru" : "Элитный Щитоносец Кувы",
+    "fraction" : "grineer",
+    "health" : 40,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Kuva Trooper",
+    "name_ru" : "Пехотинец Кувы",
+    "fraction" : "grineer",
+    "health" : 120,
+    "armor" : 150,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Lancer",
+    "name_ru" : "Солдат Гринир",
+    "fraction" : "grineer",
+    "health" : 100,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Leech Osprey",
+    "name_ru" : "Дрон-Пиявка",
+    "fraction" : "corpus",
+    "health" : 100,
+    "armor" : 0,
+    "shields" : 50,
+    "head_shot_multiplier" : 3,
+    "base_level" : 15,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Leaper",
+    "name_ru" : "Прыгун",
+    "fraction" : "infested",
+    "health" : 100,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Lobber Crawler",
+    "name_ru" : "Ракетный Ползун",
+    "fraction" : "infested",
+    "health" : 50,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Lumbering Fragment",
+    "name_ru" : "Неуклюжий Фрагмент",
+    "fraction" : "murmur",
+    "health" : 3500,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 1.5,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Machinist",
+    "name_ru" : "Машинист",
+    "fraction" : "corpus",
+    "health" : 100,
+    "armor" : 0,
+    "shields" : 230,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Manic",
+    "name_ru" : "Безумный Гринир",
+    "fraction" : "grineer",
+    "health" : 350,
+    "armor" : 25,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Manic Bombard",
+    "name_ru" : "Безумный Бомбардировщик",
+    "fraction" : "grineer",
+    "health" : 1500,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 4,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Mine Osprey",
+    "name_ru" : "Дрон-Подрывник",
+    "fraction" : "corpus",
+    "health" : 100,
+    "armor" : 0,
+    "shields" : 50,
+    "head_shot_multiplier" : 3,
+    "base_level" : 10,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Minima MOA",
+    "name_ru" : "Мини МОА",
+    "fraction" : "corpus",
+    "health" : 90,
+    "armor" : 0,
+    "shields" : 150,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "MOA",
+    "name_ru" : "МОА",
+    "fraction" : "corpus",
+    "health" : 90,
+    "armor" : 0,
+    "shields" : 120,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Mutalist Osprey",
+    "name_ru" : "Муталист-Дрон",
+    "fraction" : "infested",
+    "health" : 200,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : "none",
+    "base_level" : 10,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Napalm",
+    "name_ru" : "Огнемётчик",
+    "fraction" : "grineer",
+    "health" : 600,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 6,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Ballista",
+    "name_ru" : "Баллиста Нармера",
+    "fraction" : "narmer",
+    "health" : 100,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Bombard",
+    "name_ru" : "Бомбардировщик Нармера",
+    "fraction" : "narmer",
+    "health" : 300,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Commander",
+    "name_ru" : "Командир Нармера",
+    "fraction" : "narmer",
+    "health" : 3500,
+    "armor" : 250,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Corpus Tech",
+    "name_ru" : "Техник Корпуса Нармера",
+    "fraction" : "narmer",
+    "health" : 700,
+    "armor" : 0,
+    "shields" : 250,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Crewman",
+    "name_ru" : "Солдат Корпуса Нармера",
+    "fraction" : "narmer",
+    "health" : 100,
+    "armor" : 0,
+    "shields" : 150,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Detron Crewman",
+    "name_ru" : "Солдат с Детроном Нармера",
+    "fraction" : "narmer",
+    "health" : 60,
+    "armor" : 0,
+    "shields" : 150,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Flameblade",
+    "name_ru" : "Солдат с Огненным Клинком Нармера",
+    "fraction" : "narmer",
+    "health" : 50,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Heavy Gunner",
+    "name_ru" : "Тяжёлый Пулемётчик Нармера",
+    "fraction" : "narmer",
+    "health" : 520.5,
+    "armor" : 575,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Hellion",
+    "name_ru" : "Изгнанник Нармера",
+    "fraction" : "narmer",
+    "health" : 100,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Jailer",
+    "name_ru" : "Тюремщик Нармера",
+    "fraction" : "narmer",
+    "health" : 600,
+    "armor" : 0,
+    "shields" : 500,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Lancer",
+    "name_ru" : "Солдат Гринир Нармера",
+    "fraction" : "narmer",
+    "health" : 100,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Napalm",
+    "name_ru" : "Огнемётчик Нармера",
+    "fraction" : "narmer",
+    "health" : 600,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Nullifier Crewman",
+    "name_ru" : "Нуллификатор Корпуса Нармера",
+    "fraction" : "narmer",
+    "health" : 60,
+    "armor" : 0,
+    "shields" : 150,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Powerfist",
+    "name_ru" : "Солдат с Силовой Перчаткой Нармера",
+    "fraction" : "narmer",
+    "health" : 100,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Prod Crewman",
+    "name_ru" : "Солдат с Жезлом Нармера",
+    "fraction" : "narmer",
+    "health" : 100,
+    "armor" : 0,
+    "shields" : 50,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Scorch",
+    "name_ru" : "Выжигатель Нармера",
+    "fraction" : "narmer",
+    "health" : 120,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Scorpion",
+    "name_ru" : "Скорпион Нармера",
+    "fraction" : "narmer",
+    "health" : 150,
+    "armor" : 150,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Shield Lancer",
+    "name_ru" : "Щитоносец Нармера",
+    "fraction" : "narmer",
+    "health" : 100,
+    "armor" : 50,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Sniper Crewman",
+    "name_ru" : "Солдат-Снайпер Нармера",
+    "fraction" : "narmer",
+    "health" : 60,
+    "armor" : 0,
+    "shields" : 150,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Narmer Trooper",
+    "name_ru" : "Пехотинец Нармера",
+    "fraction" : "narmer",
+    "health" : 120,
+    "armor" : 150,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "toxin",
+        "value" : 1.5
+      },
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Nauseous Crawler",
+    "name_ru" : "Рвотный Ползун",
+    "fraction" : "infested",
+    "health" : 50,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Nullifier Crewman",
+    "name_ru" : "Нуллификатор Корпуса",
+    "fraction" : "corpus",
+    "health" : 90,
+    "armor" : 0,
+    "shields" : 40,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Orokin Drone",
+    "name_ru" : "Дрон Орокин",
+    "fraction" : "orokin",
+    "health" : 35,
+    "armor" : 0,
+    "shields" : 50,
+    "head_shot_multiplier" : "none",
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Ortholyst",
+    "name_ru" : "Ортолист",
+    "fraction" : "sentient",
+    "health" : 600,
+    "armor" : 125,
+    "shields" : 0,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 1,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "cold",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Oxium Osprey",
+    "name_ru" : "Оксиумный Дрон",
+    "fraction" : "corpus",
+    "health" : 750,
+    "armor" : 40,
+    "shields" : 150,
+    "head_shot_multiplier" : 3,
+    "base_level" : 5,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Powerfist",
+    "name_ru" : "Солдат с Силовой Перчаткой",
+    "fraction" : "grineer",
+    "health" : 100,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Prod Crewman",
+    "name_ru" : "Солдат с Жезлом",
+    "fraction" : "corpus",
+    "health" : 100,
+    "armor" : 0,
+    "shields" : 50,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Railgun MOA",
+    "name_ru" : "МОА Рельсотрон",
+    "fraction" : "corpus",
+    "health" : 90,
+    "armor" : 0,
+    "shields" : 120,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Remech Osprey",
+    "name_ru" : "Дрон-Ремех",
+    "fraction" : "corpus",
+    "health" : 250,
+    "armor" : 50,
+    "shields" : 200,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : [ "impact" ]
+  },
+  {
+    "name_eng" : "Rogue Arcocanid",
+    "name_ru" : "Дикий Аркоканид",
+    "fraction" : "murmur",
+    "health" : 80,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 1.5,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Rogue Bonewidow",
+    "name_ru" : "Дикая Костяная Вдова",
+    "fraction" : "murmur",
+    "health" : 1800,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : "none",
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Rogue Culverin",
+    "name_ru" : "Дикий Кульверин",
+    "fraction" : "murmur",
+    "health" : 500,
+    "armor" : 175,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Rogue Voidrig",
+    "name_ru" : "Дикий Войдриг",
+    "fraction" : "murmur",
+    "health" : 3800,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : "none",
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Roller",
+    "name_ru" : "Роллер",
+    "fraction" : "grineer",
+    "health" : 40,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : "none",
+    "base_level" : 12,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Runner",
+    "name_ru" : "Бегун",
+    "fraction" : "infested",
+    "health" : 100,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Sapping Osprey",
+    "name_ru" : "Дрон-Подрывник",
+    "fraction" : "corpus",
+    "health" : 200,
+    "armor" : 0,
+    "shields" : 50,
+    "head_shot_multiplier" : 3,
+    "base_level" : 15,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Scaldra Barbican",
+    "name_ru" : "Страж Скальдры",
+    "fraction" : "scaldra",
+    "health" : 125,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "gas",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Scaldra Eradicator",
+    "name_ru" : "Ликвидатор Скальдры",
+    "fraction" : "scaldra",
+    "health" : 325,
+    "armor" : 500,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "gas",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Scaldra Flayer",
+    "name_ru" : "Живодёр Скальдры",
+    "fraction" : "scaldra",
+    "health" : 50,
+    "armor" : 10,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "gas",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Scaldra Jaeger",
+    "name_ru" : "Загонщик Скальдры",
+    "fraction" : "scaldra",
+    "health" : 125,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      },
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "gas",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Scorch",
+    "name_ru" : "Выжигатель",
+    "fraction" : "grineer",
+    "health" : 120,
+    "armor" : 100,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 7,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Scorpion",
+    "name_ru" : "Скорпион",
+    "fraction" : "grineer",
+    "health" : 150,
+    "armor" : 150,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 10,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Scrambus",
+    "fraction" : "corpus",
+    "name_ru" : "Скрамбус",
+    "health" : 1100,
+    "armor" : 0,
+    "shields" : 400,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Seeker",
+    "name_ru" : "Искатель",
+    "fraction" : "grineer",
+    "health" : 100,
+    "armor" : 200,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Shield Lancer",
+    "name_ru" : "Щитоносец",
+    "fraction" : "grineer",
+    "health" : 100,
+    "armor" : 5,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 5,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Shield Osprey",
+    "name_ru" : "Дрон-Щитогенератор",
+    "fraction" : "corpus",
+    "health" : 35,
+    "armor" : 0,
+    "shields" : 25,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Shockwave MOA",
+    "name_ru" : "Ударный МОА",
+    "fraction" : "corpus",
+    "health" : 90,
+    "armor" : 0,
+    "shields" : 120,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Shuffling Fragment",
+    "name_ru" : "Случайный Фрагмент",
+    "fraction" : "murmur",
+    "health" : 250,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : "none",
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Sniper Crewman",
+    "name_ru" : "Солдат-Снайпер",
+    "fraction" : "corpus",
+    "health" : 30,
+    "armor" : 0,
+    "shields" : 40,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "puncture",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Swarm Mutalist MOA",
+    "name_ru" : "Роевик-Муталист МОА",
+    "fraction" : "infested",
+    "health" : 350,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 12,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Tar Mutalist MOA",
+    "name_ru" : "Деготь-Муталист МОА",
+    "fraction" : "infested",
+    "health" : 350,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 12,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Techrot Galliflex",
+    "name_ru" : "Техротный Галлифекс",
+    "fraction" : "techrot",
+    "health" : 100,
+    "armor" : 0,
+    "shields" : 100,
+    "head_shot_multiplier" : 1.5,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "gas",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "cold",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Techrot Matmas",
+    "name_ru" : "Техротный Матмас",
+    "fraction" : "techrot",
+    "health" : 300,
+    "armor" : 0,
+    "shields" : 150,
+    "head_shot_multiplier" : 1.875,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "gas",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "cold",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Techrot Miasmite",
+    "name_ru" : "Техротный Миазмит",
+    "fraction" : "techrot",
+    "health" : 20,
+    "armor" : 0,
+    "shields" : 5,
+    "head_shot_multiplier" : "none",
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "gas",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "cold",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Techrot Obsolyte",
+    "name_ru" : "Техротный Обсолайт",
+    "fraction" : "techrot",
+    "health" : 400,
+    "armor" : 0,
+    "shields" : 200,
+    "head_shot_multiplier" : 1.5,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "gas",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "cold",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Techrot Scuzzi",
+    "name_ru" : "Техротный Скуззи",
+    "fraction" : "techrot",
+    "health" : 225,
+    "armor" : 0,
+    "shields" : 125,
+    "head_shot_multiplier" : 4.5,
+    "base_level" : 8,
+    "damage_types_multipliers" : [
+      {
+        "type" : "gas",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "cold",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Techrot Volatile Galliflex",
+    "name_ru" : "Взрывной Техротный Галлифекс",
+    "fraction" : "techrot",
+    "health" : 80,
+    "armor" : 0,
+    "shields" : 50,
+    "head_shot_multiplier" : 1.5,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "gas",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "cold",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "The Anatomizer",
+    "name_ru" : "Анатомайзер",
+    "fraction" : "murmur",
+    "health" : 6000,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : "none",
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "The Hollow Vein",
+    "name_ru" : "Полая Вена",
+    "fraction" : "murmur",
+    "health" : 7500,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 1.5,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "radiation",
+        "value" : 1.5
+      },
+      {
+        "type" : "viral",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Toxic Ancient",
+    "name_ru" : "Токсичный Древний",
+    "fraction" : "infested",
+    "health" : 400,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Toxic Crawler",
+    "name_ru" : "Ядовитый Ползун",
+    "fraction" : "infested",
+    "health" : 50,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Trooper",
+    "name_ru" : "Пехотинец",
+    "fraction" : "grineer",
+    "health" : 120,
+    "armor" : 150,
+    "shields" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "impact",
+        "value" : 1.5
+      },
+      {
+        "type" : "corrosive",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Undying Flyer",
+    "name_ru" : "Бессмертный Летун",
+    "fraction" : "infested",
+    "health" : 400,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 0,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : [ "viral" ]
+  },
+  {
+    "name_eng" : "Vapos Detron Ranger",
+    "name_ru" : "Солдат с Детроном Вапоса",
+    "fraction" : "corpus",
+    "health" : 60,
+    "armor" : 0,
+    "shields" : 450,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Vapos Elite Ranger",
+    "name_ru" : "Элитный Рейнджер Вапоса",
+    "fraction" : "corpus",
+    "health" : 80,
+    "armor" : 0,
+    "shields" : 450,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Vapos Nullifier Ranger",
+    "name_ru" : "Рейнджер-Нуллификатор Вапоса",
+    "fraction" : "corpus",
+    "health" : 80,
+    "armor" : 0,
+    "shields" : 450,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Vapos Sniper Ranger",
+    "name_ru" : "Рейнджер-Снайпер Вапоса",
+    "fraction" : "corpus",
+    "health" : 60,
+    "armor" : 0,
+    "shields" : 450,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Vapos Tech Ranger",
+    "name_ru" : "Техник-Рейнджер Вапоса",
+    "fraction" : "corpus",
+    "health" : 80,
+    "armor" : 0,
+    "shields" : 450,
+    "damage_reduction" : 0,
+    "head_shot_multiplier" : 3,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "electricity",
+        "value" : 1.5
+      },
+      {
+        "type" : "magnetic",
+        "value" : 1.5
+      },
+      {
+        "type" : "blast",
+        "value" : 0.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Venin Mutalist Osprey",
+    "name_ru" : "Венин Муталист",
+    "fraction" : "infested",
+    "health" : 200,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : "none",
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  },
+  {
+    "name_eng" : "Volatile Runner",
+    "name_ru" : "Взрывоопасный Бегун",
+    "fraction" : "infested",
+    "health" : 80,
+    "armor" : 0,
+    "shields" : 0,
+    "head_shot_multiplier" : 2,
+    "base_level" : 1,
+    "damage_types_multipliers" : [
+      {
+        "type" : "slash",
+        "value" : 1.5
+      },
+      {
+        "type" : "heat",
+        "value" : 1.5
+      }
+    ],
+    "proc_immunity" : []
+  }
+]

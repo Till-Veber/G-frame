@@ -1,0 +1,185 @@
+[
+  {
+    "name_eng" : "Fractalized Reset",
+    "name_ru" : "Фрактальный Сброс",
+    "description_eng" : "On Ability Cast: +240% Reload Speed for 5s",
+    "description_ru" : "При применении способности: +240% к скорости перезарядки в течение 5с",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "reload_speed" : 240
+  },
+  {
+    "name_eng" : "Longbow Sharpshot",
+    "name_ru" : "Меткая Стрела",
+    "description_eng" : "On Headshot:Gain +300% damage on your next shot",
+    "description_ru" : "При попадании в голову: Получите +200% к урону для последующего выстрела",
+    "weapon_types" : [ "Bow" ],
+    "conditional" : [
+      {
+        "bonus" : "damage",
+        "value" : 300,
+        "duration" : "inf",
+        "uses" : 1,
+        "joint_duration" : 1,
+        "stacks" : 1,
+        "refresh" : 1,
+        "conditions" : [ "head_shot" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Primary Blight",
+    "name_ru" : "Основная Пагубность",
+    "description_eng" : "On Toxin Status Effect: +3.6% Critical Damage and +1.8% Multishot for 12s. Stacks up to 40x",
+    "description_ru" : "При наложении статуса токсина: +3,6% крит. урона и +1,8% мультивыстрел на 12 с. Складывается до 40 раз",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "conditional" : [
+      {
+        "bonus" : "critical_damage",
+        "value" : 3.6,
+        "duration" : 12,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 40,
+        "refresh" : 1,
+        "conditions" : [ "toxin_status_proc" ],
+        "chance" : 1
+      },
+      {
+        "bonus" : "multishot",
+        "value" : 1.8,
+        "duration" : 12,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 40,
+        "refresh" : 1,
+        "conditions" : [ "toxin_status_proc" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Primary Crux",
+    "name_ru" : "Основная Точка",
+    "description_eng" : "On Weak Point Hit: Gain +30% Status Chance and +6% Ammo Efficiency for 10s. Stacks up to 10x",
+    "description_ru" : "При попадании по слабой точке: даёт +30% к шансу статуса и +6% к эффективности боеприпасов на 10 с. Складывается до 10 раз",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "conditional" : [
+      {
+        "bonus" : "status_chance",
+        "value" : 30,
+        "duration" : 10,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 10,
+        "refresh" : 1,
+        "conditions" : [ "head_shot" ],
+        "chance" : 1
+      },
+      {
+        "bonus" : "ammo_efficiency",
+        "value" : 6,
+        "duration" : 10,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 10,
+        "refresh" : 1,
+        "conditions" : [ "head_shot" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Primary Deadhead",
+    "name_ru" : "Основной Выстрел В Голову",
+    "description_eng" : "On Precision Headshot Kill/Passive: +120% Damage for 24s. Stacks up to 3x. +30% to Headshot Multiplier -50% Weapon Recoil",
+    "description_ru" : "При убийстве попаданием в голову: +120% урона на 24с. Складывается до 3 раз. +30% к множителю урона в голову -50% к отдаче",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "headshot_multiplier" : 30,
+    "conditional" : [
+      {
+        "bonus" : "damage",
+        "value" : 120,
+        "duration" : 24,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 3,
+        "refresh" : 1,
+        "conditions" : [ "head_shot_kill" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Primary Dexterity",
+    "name_ru" : "Основная Ловкость",
+    "description_eng" : "On Melee Kill/Passive: +60% Damage for 20s. Stacks up to 6x. +7.5s Combo Duration",
+    "description_ru" : "При убийстве в ближнем бою: +60% урона на 20с. Складывается до 6 раз +7,5с к длительности комбо",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "conditional" : [
+      {
+        "bonus" : "damage",
+        "value" : 60,
+        "duration" : 20,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 6,
+        "refresh" : 1,
+        "conditions" : [ "melee_kill" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Primary Frostbite",
+    "name_ru" : "Основное Обморожение",
+    "description_eng" : "On Cold Status Effect: +3% Critical Damage and +2.25% Multishot for 12s. Stacks up to 40x",
+    "description_ru" : "При наложении статуса холода: +3% крит. урона и +2,25% мультивыстрел на 12 с. Складывается до 40 раз",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "conditional" : [
+      {
+        "bonus" : "critical_damage",
+        "value" : 3,
+        "duration" : 12,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 40,
+        "refresh" : 1,
+        "conditions" : [ "cold_status_proc" ],
+        "chance" : 1
+      },
+      {
+        "bonus" : "multishot",
+        "value" : 2.25,
+        "duration" : 12,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 40,
+        "refresh" : 1,
+        "conditions" : [ "cold_status_proc" ],
+        "chance" : 1
+      }
+    ]
+  },
+  {
+    "name_eng" : "Primary Merciless",
+    "name_ru" : "Основная Безжалостность",
+    "description_eng" : "On Kill/Passive: +30% Damage for 4s. Stacks up to 12x. +30% Reload Speed",
+    "description_ru" : "При убийстве: +30% урона на 4с. Складывается до 12 раз. +30% к скорости перезарядки",
+    "weapon_types" : [ "Rifle", "Bow", "Sniper rifle", "Shotgun" ],
+    "reload_speed" : 30,
+    "conditional" : [
+      {
+        "bonus" : "damage",
+        "value" : 30,
+        "duration" : 4,
+        "uses" : "inf",
+        "joint_duration" : 1,
+        "stacks" : 12,
+        "refresh" : 1,
+        "conditions" : [ "kill" ],
+        "chance" : 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,246 @@
+<!-- src/templates/builds/create.html -->
+{% extends "base.html" %}
+
+{% block title %}Создать билд — {{ weapon.name_ru }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <div class="d-flex align-items-center mb-4">
+    <img src="/static/img/weapons/{{ weapon.name_eng }}.png" class="img-fluid" style="max-height: 100px; image-rendering: pixelated;">
+    <h2 class="text-light ms-3">{{ weapon.name_ru }} <small class="text-muted">({{ weapon.name_eng }})</small></h2>
+  </div>
+
+  <form id="buildForm" method="post">
+    <div class="mb-3">
+      <label for="buildTitle" class="form-label text-light">Название билда</label>
+      <input type="text" class="form-control bg-dark text-light border-orange" id="buildTitle" name="title" required>
+    </div>
+    <div class="mb-3">
+      <label for="buildDesc" class="form-label text-light">Описание (необязательно)</label>
+      <textarea class="form-control bg-dark text-light border-orange" id="buildDesc" name="description" rows="3"></textarea>
+    </div>
+
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <input type="hidden" name="weapon_id" value="{{ weapon.id }}">
+
+    <!-- Слоты для модов -->
+    <div class="row mb-4">
+      <h4 class="text-light mb-3">Слоты модов</h4>
+      <div class="d-flex flex-wrap gap-3">
+        {% for i in range(1, 9) %}
+        <div class="slot bg-dark border border-orange rounded p-2 d-flex align-items-center justify-content-center"
+             data-slot="slot{{ i }}" style="width: 60px; height: 60px; cursor: pointer;">
+          {{ i }}
+        </div>
+        <input type="hidden" name="slot_slot{{ i }}" value="">
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Exilus-слот -->
+    <div class="row mb-4">
+      <h4 class="text-light mb-3">Exilus-слот</h4>
+      <div class="slot bg-dark border border-warning rounded p-2 d-flex align-items-center justify-content-center"
+           data-slot="exilus" style="width: 60px; height: 60px; cursor: pointer;">
+        Ex
+      </div>
+      <input type="hidden" name="slot_exilus" value="">
+    </div>
+
+    <!-- Arcane-слот -->
+    <div class="row mb-4">
+      <h4 class="text-light mb-3">Мистификатор (Arcane)</h4>
+      <div class="slot bg-dark border border-success rounded p-2 d-flex align-items-center justify-content-center"
+           data-slot="arcane" style="width: 60px; height: 60px; cursor: pointer;">
+        Arc
+      </div>
+      <input type="hidden" name="slot_arcane" value="">
+    </div>
+
+    <button type="submit" class="btn btn-orange">Сохранить билд</button>
+  </form>
+</div>
+
+<script>
+  let currentSlot = null;
+  window.modNameMap = {{ mod_name_map|tojson }};
+  window.equivalentMap = {{ equivalent_map|tojson }};
+
+  function showSuggestions(items, slotType) {
+    let container = document.getElementById('modSuggestions');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'modSuggestions';
+        container.className = 'position-absolute bg-dark border border-orange rounded p-2 z-3';
+        document.body.appendChild(container);
+    }
+
+    const rect = currentSlot.getBoundingClientRect();
+    container.style.top = `${rect.bottom + window.scrollY + 5}px`;
+    container.style.left = `${rect.left + window.scrollX}px`;
+    container.style.display = 'block';
+    container.style.width = '300px';
+    container.style.maxHeight = '300px';
+    container.style.overflowY = 'auto';
+    container.style.zIndex = '1000';
+
+    // Поле поиска внутри подсказок
+    container.innerHTML = `
+        <div class="input-group input-group-sm mb-2">
+            <input type="text" class="form-control bg-dark text-light border-orange"
+                   id="modSearchInput" placeholder="Поиск мода..." autocomplete="off">
+        </div>
+        <div id="modSearchResults"></div>
+    `;
+
+    const searchInput = container.querySelector('#modSearchInput');
+    const resultsDiv = container.querySelector('#modSearchResults');
+
+    // Показываем первые результаты
+    renderModResults(resultsDiv, items, slotType);
+
+    // Поиск при вводе
+    searchInput.addEventListener('input', debounce(async (e) => {
+        const query = e.target.value.trim();
+        const weaponTypes = {{ weapon.types|tojson }};
+        const encodedTypes = weaponTypes.map(t => encodeURIComponent(t)).join(',');
+        let url;
+        if (slotType === 'arcane') {
+            url = `/api/search-arcanes?weapon_type=${encodedTypes}&q=${encodeURIComponent(query)}`;
+        } else {
+            url = `/api/search-mods?weapon_type=${encodedTypes}&slot_type=${slotType}&q=${encodeURIComponent(query)}`;
+        }
+
+        try {
+            const res = await fetch(url);
+            const newItems = await res.json();
+            renderModResults(resultsDiv, newItems, slotType);
+        } catch (err) {
+            console.error('Ошибка поиска:', err);
+            renderModResults(resultsDiv, [], slotType);
+        }
+    }, 300)); // Дебаунс: не отправляем запрос чаще 1 раза в 300 мс
+
+    // Фокус на поле поиска
+    searchInput.focus();
+
+    // Закрытие при клике вне
+    document.addEventListener('click', function closeHandler(e) {
+        if (!container.contains(e.target) && e.target !== currentSlot) {
+            container.style.display = 'none';
+            document.removeEventListener('click', closeHandler);
+        }
+    });
+  }
+
+    // Функция отрисовки результатов
+    function renderModResults(container, items, slotType) {
+        if (items.length === 0) {
+            container.innerHTML = '<div class="text-muted p-2">Ничего не найдено</div>';
+        } else {
+            container.innerHTML = items.map(item => `
+                <div class="d-flex align-items-center p-2 hover-bg" style="cursor:pointer;"
+                     onclick="selectMod(${item.id}, '${item.name_ru.replace(/'/g, "\\'")}', '${item.icon}', '${slotType}')">
+                    <img src="${item.icon}" width="32" height="32" style="image-rendering: pixelated;" class="me-2">
+                    <span>${item.name_ru} <small class="text-muted">(${item.name_eng})</small></span>
+                </div>
+            `).join('');
+        }
+    }
+
+    // Функция дебаунса
+    function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
+
+  function selectMod(modId, name, icon, slotType) {
+    const hiddenInput = document.querySelector(`input[name='slot_${slotType}']`);
+    if (hiddenInput) {
+        hiddenInput.value = modId;
+    }
+
+    // === Удаляем ДУБЛИКАТЫ (как раньше) ===
+    document.querySelectorAll('input[name^="slot_"]').forEach(input => {
+        if (input.name !== `slot_${slotType}` && input.value == modId) {
+            input.value = '';
+            resetSlot(input.name.replace('slot_', ''));
+        }
+    });
+
+    // === Удаляем ЭКВИВАЛЕНТНЫЕ моды ===
+    // Получаем список эквивалентов из скрытых данных (см. ниже)
+    const equivalentNames = window.equivalentMap[modId] || [];
+    document.querySelectorAll('input[name^="slot_"]').forEach(input => {
+        if (input.name !== `slot_${slotType}` && input.value) {
+            const otherModId = input.value;
+            const otherModName = window.modNameMap[otherModId];
+            if (otherModName && equivalentNames.includes(otherModName)) {
+                input.value = '';
+                resetSlot(input.name.replace('slot_', ''));
+            }
+        }
+    });
+
+    // Обновляем текущий слот
+    currentSlot.innerHTML = `<img src="${icon}" width="40" height="40" style="image-rendering: pixelated;">`;
+    currentSlot.title = name;
+
+    const container = document.getElementById('modSuggestions');
+    if (container) container.style.display = 'none';
+  }
+
+    // Функция сброса слота
+    function resetSlot(slotName) {
+        const slot = document.querySelector(`.slot[data-slot="${slotName}"]`);
+        if (slot) {
+            if (slotName === 'exilus') {
+                slot.innerHTML = 'Ex';
+            } else if (slotName === 'arcane') {
+                slot.innerHTML = 'Arc';
+            } else {
+                slot.innerHTML = slotName.replace('slot', '');
+            }
+        }
+    }
+
+  // Навешиваем обработчики
+  document.querySelectorAll('.slot').forEach(slot => {
+    slot.addEventListener('click', async (e) => {
+      currentSlot = slot;
+      const slotType = slot.dataset.slot;
+
+      // Получаем типы оружия из Jinja2
+      const weaponTypes = {{ weapon.types|tojson }};
+      const encodedTypes = weaponTypes.map(t => encodeURIComponent(t)).join(',');
+
+      let url;
+      if (slotType === 'arcane') {
+        url = `/api/search-arcanes?weapon_type=${encodedTypes}`;
+      } else {
+        url = `/api/search-mods?weapon_type=${encodedTypes}&slot_type=${slotType}`;
+      }
+
+      const res = await fetch(url);
+      const items = await res.json();
+      showSuggestions(items, slotType);
+    });
+  });
+
+  // Добавляем стиль для hover
+  const style = document.createElement('style');
+  style.textContent = `
+    .hover-bg:hover {
+      background-color: #444;
+    }
+  `;
+  document.head.appendChild(style);
+</script>
+{% endblock %}

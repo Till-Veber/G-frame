@@ -1,0 +1,39 @@
+<!-- src/templates/user/my_builds.html -->
+{% extends "base.html" %}
+
+{% block title %}Мои билды{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2 class="text-light mb-4">Мои билды ({{ builds|length }})</h2>
+
+  {% if builds %}
+    <div class="row">
+      {% for build in builds %}
+        <div class="col-md-4 mb-3">
+          <div class="card bg-dark text-light h-100">
+            <img src="/static/img/weapons/{{ build.weapon.name_eng }}.png"
+                 class="card-img-top" alt="{{ build.weapon.name_ru }}" style="max-height: 150px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">{{ build.title }}</h5>
+              <p class="card-text text-muted">{{ build.weapon.name_ru }}</p>
+              <div class="d-flex gap-2">
+                <a href="{{ url_for('builds.view_build', build_id=build.id) }}" class="btn btn-outline-orange btn-sm">Просмотреть</a>
+                <a href="{{ url_for('builds.create_build', weapon_id=build.weapon_id) }}" class="btn btn-outline-success btn-sm">Редактировать</a>
+                  <form method="post" action="{{ url_for('builds.delete_build', build_id=build.id) }}"
+                      onsubmit="return confirm('Удалить билд?')" style="display:inline;">
+                  <!-- Добавляем CSRF-токен -->
+                  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                  <button type="submit" class="btn btn-outline-danger btn-sm">Удалить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="alert alert-info">У вас пока нет ни одного билда. <a href="{{ url_for('main.index') }}">Создайте первый!</a></div>
+  {% endif %}
+</div>
+{% endblock %}
